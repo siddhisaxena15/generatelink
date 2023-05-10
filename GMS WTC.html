@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <title>GMS Support</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      background-color:powderblue;
+      }
+      input[type=text], input[type=password], select {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      
+      button {
+      background-color: #4286f4;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: pointer;
+      width: 48%;
+      }
+      h1, h2 {
+      text-align:center;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+      <h1>Welcome to GMS Support</h1>
+      <h2>Submit Your Case</h2>
+     <div class="formcontainer">
+      <div class="container">
+    <input type=hidden name="orgid" value="00D2w00000RIRA4">
+    <input type=hidden name="retURL" value="http://">
+    
+   
+    <label for="company"><strong>Account Name </strong><span>*</span></label><input  id="company" maxlength="80" name="company" size="20" type="text" required><br>
+    
+    <label for="name"><strong>Contact Name </strong><span>*</span></label><input  id="name" maxlength="80" name="name" size="20" type="text" required><br>
+    
+    <label for="email"><strong>Email </strong><span>*</span></label><input  id="email" maxlength="80" name="email" size="20" type="text" required><br>
+    
+    <label for="phone"><strong>Phone </strong><span>*</span></label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required><br>
+    
+    <label for="subject"><strong>Subject </strong><span>*</span></label><input  id="subject" maxlength="80" name="subject" size="20" type="text" required><br>
+    
+    <label for="description"><strong>Vehicle Number </strong><span>*</span></label><input id="description" maxlength="100" name="description" size="20" type="text" required>
+   
+<label required><strong>Service: </strong><span>*</span></label><br><select  id="00N2w00000WBBvm" name="00N2w00000WBBvm" title="Service"><option value="">--None--</option>
+    <option value="PSBS04">Brake Servicing</option>
+    <option value="PSOC03">Oil Change</option>
+    <option value="PSBR02">Body Repair</option>
+    <option value="PSWS01">Washing Service</option>
+    </select>
+    </div>
+    <button type="submit" name="submit" onsubmit="alert('Your case has been submitted')">Submit</button>
+  
+      </div>
+    </form>
+  </body>
+</html>
