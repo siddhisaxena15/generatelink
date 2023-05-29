@@ -51,6 +51,11 @@
         color: red;
       }
     </style>
+    <script>
+      function submitButton() {
+        window.alert("Your case has been submitted");
+      }
+      </script>
   </head>
   <body>
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
@@ -61,30 +66,40 @@
       <div class="container">
     <input type=hidden name="orgid" value="00D2w00000RIRA4">
     <input type=hidden name="retURL" value="http://">
-    
+    <input type="hidden" name="debug" value=1>                              
+    <input type="hidden" name="debugEmail" value="siddhisaxena1510@gmail.com">  
    
-    <label for="company"><strong>Account Name </strong><span>*</span></label><input  id="company" maxlength="80" name="company" size="20" type="text" required><br>
+    <label for="company"><strong>Account Name </strong></label><input  id="company" maxlength="80" name="company" size="20" type="text"><br>
     
     <label for="name"><strong>Contact Name </strong><span>*</span></label><input  id="name" maxlength="80" name="name" size="20" type="text" required><br>
     
-    <label for="email"><strong>Email </strong><span>*</span></label><input  id="email" maxlength="80" name="email" size="20" type="text" required><br>
+    <label for="email"><strong>Email </strong></label><input  id="email" maxlength="80" name="email" size="20" type="text"><br>
     
-    <label for="phone"><strong>Phone </strong><span>*</span></label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required><br>
+    <label for="phone"><strong>Phone </strong></label><input  id="phone" maxlength="40" name="phone" size="20" type="text"><br>
     
-    <label for="subject"><strong>Subject </strong><span>*</span></label><input  id="subject" maxlength="80" name="subject" size="20" type="text" required><br>
+    <label for="subject"><strong>Vehicle Number </strong><span>*</span></label><input  id="subject" maxlength="80" name="subject" size="20" type="text" required><br>
     
-    <label for="description"><strong>Vehicle Number </strong><span>*</span></label><input id="description" maxlength="100" name="description" size="20" type="text" required>
+    <label for="description"><strong>Description </strong></label><input id="description" maxlength="100" name="description" size="20" type="text">
    
 <label required><strong>Service: </strong><span>*</span></label><br><select  id="00N2w00000WBBvm" name="00N2w00000WBBvm" title="Service"><option value="">--None--</option>
-    <option value="PSBS04">Brake Servicing</option>
-    <option value="PSOC03">Oil Change</option>
-    <option value="PSBR02">Body Repair</option>
-    <option value="PSWS01">Washing Service</option>
+  <option value="Brake Servicing">Brake Servicing</option>
+  <option value="Oil Change">Oil Change</option>
+  <option value="Tyre Change">Tyre Change</option>
+  <option value="Body Repair">Body Repair</option>
+  <option value="Washing Service">Washing Service</option>
+  <option value="Headlight Service">Headlight Service</option>
+  <option value="Engine Service">Engine Service</option>
     </select>
     </div>
-    <button type="submit" name="submit" onsubmit="alert('Your case has been submitted')">Submit</button>
+    <button type="submit" name="submit" onsubmit="submitButton()">Submit</button>
   
       </div>
     </form>
+    <script>
+      function submitAction(){
+        alert('Your case has been submitted');
+      }
+    </script>
   </body>
+
 </html>
